@@ -1,0 +1,193 @@
+{
+	"info": {
+		"_postman_id": "ccb34b49-8440-4a2b-b89f-6568292dbb14",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "车辆进场",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"car_number\":\"粤Y889Z4\",\r\n\"car_type\":\"蓝牌车\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:5000/car_in",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"car_in"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "查询在场车辆",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:5000//get_in_car_list",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"",
+						"get_in_car_list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "车辆离场接口",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"car_number\":\"粤Y889Z4\",\r\n\"car_type\":\"蓝牌车\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:5000/car_out",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"car_out"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "获取车辆离场记录接口",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:5000/get_out_car_list",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"get_out_car_list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "获取车场剩余临时车位接口",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:5000/get_current_car_space_num",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"get_current_car_space_num"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "查费接口",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"car_number\":\"粤Y889Z4\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:5000/get_charge",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"get_charge"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "缴费接口",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"car_number\":\"粤Y889Z1\",\r\n\"car_type\":\"蓝牌车\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:5000/paymoney",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"paymoney"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
